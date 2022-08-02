@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <form id="dataFrom" method="post" action="./bakent/receiver.php">
+        <label from="name">nombre</label>
+        <input type="text"
+        id="name"
+        name="name"
+        placeholder="Intriduce tu nombre"
+        minlength="3"
+        maxlength="50"
+    
+        
+        title="introduce 3 caracteres maximo 50"
+        tabindex="0"
+        autofocus="true"
+        autocomplete="off"
+        required><br>
+        <select  id="TypeDocumet" name="typeDocumet">
+            <optio value="nada" select="selected">seleccione un tipo de documeto</optio> 
+            <optio value="cc">cedula id</optio>
+            <optio value="cc">targeta id</optio> 
+            <optio value="cc">cedula extrangera</optio>  
+
+        </select>
+        <label for="documet">No documeto</label>
+        <input type="number" id="documet"placeholder="introduce tu documeto de identidad"
+        min="2"max="99"tabindex="1">
+        <label for="estado civil">estado civil</label>
+        <input type="radio" name="ecivil"id="ecivil"value="solter@">
+        <input type="radio" name="ecivil"value="casad@">
+        <input type="radio" name="ecivil"value="divorciad@">
+        <input type="radio" name="ecivil"value="viud@">
+        <fieldset>
+            <label form="colores">color favorito</label>
+            <input type="solor" id="colores">
+            <label form="date">color favorito</label>
+            <input type="solor" id="colores">
+        </fieldset>
+        <label for="lenguajess ">lenguaes de prgramacion</label>
+        <select id="lenguajes" name="lrguajes tipados">
+            <optgroup label="leguajes tipados">
+                <option value="java">java</option>
+                <option value="java">c#</option>
+                <option value="java">c++</option>
+            </optgroup>
+            <optgroup label="leguajes  no tipados">
+                <option value="java">phyton</option>
+                <option value="java">javascrip</option>
+                
+            </optgroup>
+            
+            
+        </select>
+        <optgroup>
+
+        </optgroup>
+        <label for="acepta">'acepta teminos y condiciones?</label>
+        <input type="checkbox" id="terminos">
+        <hr>
+        <input type="submit" value="envio de datos">
+        <button id=Validar></button>
+
+        
+
+    </form>
+    <cript src="../scrips/main.js">
+</body>
+</html>
